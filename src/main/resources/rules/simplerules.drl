@@ -1,0 +1,14 @@
+package rules
+
+import com.drools.project.Account;
+import com.drools.project.OutputDisplay;
+
+global OutputDisplay outputDisplay;
+
+rule "First Rule"
+  when
+    Account()
+  then
+    outputDisplay.showText("account rule fired");
+end
+

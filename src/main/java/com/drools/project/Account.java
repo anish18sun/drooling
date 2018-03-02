@@ -5,6 +5,11 @@ public class Account {
   private String name;
   private double balance;
 
+  public Account() {
+    this.name = "Anish";
+    this.balance = 345.00;
+  }
+
   public Account(String name, double balance) {
     this.name = name;
     this.balance = balance;
